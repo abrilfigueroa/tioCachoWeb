@@ -538,6 +538,7 @@ footer h3{
     }
     header nav{
         height: 38.59px;
+        width: 768px;
     }
     header nav ul li a{
         width: auto;
@@ -547,6 +548,8 @@ footer h3{
         color: #c44536;
         margin-bottom: 0%;
         padding-bottom: 0%;
+        display: flex;
+        justify-content: center;
     }
     header nav ul{
         background-color: #fcca46;
