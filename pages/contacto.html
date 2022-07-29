@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Tio Cacho - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+<body>
+    <header>
+        <picture>
+            <source media="(min-width:576px)" srcset="..img/logoTioCacho570">
+            <source media="(min-width:768px)" srcset="..img/logoTioCacho768">
+            <source media="(min-width:1200px)" srcset="..img/logoTioCacho1200">
+            <img src="../img/logoTioCacho.png" alt="logoTioCacho">
+        </picture>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="productos.html">PRODUCTOS</a>
+                </li>
+                <li>
+                    <a href="hacé tu pedido.html">HACÉ TU PEDIDO</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   <section class="contacto">
+      <h1>Contacto</h1>  
+       <form>
+        <p>Llená el formulario para que podamos contactarte.</p>
+        <br>
+          <label for="nombre_apellido">Nombre y apellido</label>
+          <input type="text" name="nombre_apellido"/>
+          <br>
+          <label for="correo_electronico">Correo electrónico</label>
+          <input type="text" name="correo_electronico"/>
+          <label for="celular">Número de celular</label>
+          <input type="tel" name="celular"/>
+          <br>
+           <label for="preferencia_contacto">¿Dónde preferís que te contactemos?</label>
+           <select name="peferencia_contacto" >
+            <option value="celular">Celular</option>
+            <option value="correo_electronico">Correo electrónico</option>
+           </select>
+           <br>
+           <label for="dudas">Motivo de contacto</label>
+           <br>
+           <textarea name="dudas" id="" cols="30" rows="10"></textarea>
+           <br>
+           <input type="submit" value="Enviar consulta"/>
+        </form> 
+        <div class="contactate">
+            <ul>
+                <li></li><a href="https://www.instagram.com/tiocachoquilmes/?hl=es">Instagram</a>
+                <p>@tiocachoquilmes</p>
+                <li></li><a href="https://www.facebook.com/TioCachoFiambreria/">Facebook</a>
+                <p>@TioCachoFiambreria</p>
+                <li></li><a href="https://api.whatsapp.com/send?phone=541151323672&app=facebook&entry_point=page_cta&fbclid=IwAR0MP1l-I9Bg5TwO8vIjxmkGMvNyut6CkLQObr-dN2BlcWrPDfZakw_23QE">WhatsApp</a>
+                <p>+54 11 5132-3672</p>
+                <br>
+                <li>Teléfono</li>
+                <p>2820-3812</p>
+            </ul>
+        </div> 
+   </section>
+   <footer> 
+    <div><div class="redesSociales"></div>
+        <h3>Redes sociales</h3>
+        <ul>
+           <li>Instagram: @tiocachoquilmes</li>
+           <li>Facebook: Tio Cacho</li>
+        </ul>
+    </div>
+    <div><div class="telefonos"></div>
+        <h3>Teléfonos</h3>
+        <ul>
+           <li>WhatsApp: +54 11 5132-3672</li>
+           <li>Teléfono: 11 2820-3812</li>
+        </ul>
+    </div>
+    <div><div class="ubicacion"></div>
+        <h3>Ubicación</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52460.266131623015!2d-58.33097766633679!3d-34.73627628873363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e3f9578e9eb%3A0x5421e3e9849846d0!2sTio%20Cacho!5e0!3m2!1ses!2sar!4v1655663926779!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+</body>
+</html>
