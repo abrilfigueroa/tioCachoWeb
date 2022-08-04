@@ -1,0 +1,22 @@
+header{
+    background-color: $color-header;
+    position: sticky;
+    top: 0%;
+    nav{
+        cursor: pointer;
+        ul{
+            padding: 5%;
+            font-weight: bolder;
+            color: #fcca46;
+            li{
+                padding-left: 10px;
+                a{
+                    font-size: $font-nav;
+                    &:hover{
+                        color: $hover-color;
+                    }
+                }
+            }
+        }    
+    }
+}

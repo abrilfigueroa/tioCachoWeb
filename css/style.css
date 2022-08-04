@@ -1,0 +1,79 @@
+header {
+  background-color: #c44536;
+  position: sticky;
+  top: 0%; }
+  header nav {
+    cursor: pointer; }
+    header nav ul {
+      padding: 5%;
+      font-weight: bolder;
+      color: #fcca46; }
+      header nav ul li {
+        padding-left: 10px; }
+        header nav ul li a {
+          font-size: 1.8rem; }
+          header nav ul li a:hover {
+            color: #ffffff; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2.1rem; }
+
+p {
+  font-size: 1.4rem; }
+
+.bienvenida {
+  background-image: url(../img/background576.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .bienvenida h1 {
+    font-size: 55px;
+    color: black;
+    font-weight: bolder; }
+  .bienvenida p {
+    font-size: 20px;
+    color: black; }
+
+.conoce, .conoce .grillaGeneral, .conoce .grillaGeneral .horarios {
+  padding: 25px 15px 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .conoce .grillaGeneral, .conoce .grillaGeneral .horarios .grillaGeneral, .conoce .grillaGeneral .horarios {
+    width: 400px; }
+    .conoce .grillaGeneral .horarios h3 {
+      padding: 10px; }
+
+.novedades {
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+  align-items: center;
+  display: inline; }
+  .novedades div {
+    margin: 15px;
+    background-color: #dcdcdc;
+    padding: 35px;
+    border-radius: 3%;
+    width: 75%; }
+
+@media screen and (min-width: 768px) {
+  .bienvenida {
+    background-image: url(../img/background768.png);
+    height: 533px; } }
+
+@media screen and (min-width: 1024px) {
+  .bienvenida {
+    background-image: url(../img/background1024.png);
+    height: 431px; } }
