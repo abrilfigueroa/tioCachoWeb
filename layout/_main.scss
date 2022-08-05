@@ -47,12 +47,8 @@ p{
 .novedades{
     padding-bottom: 80px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: auto;
+    flex-direction: column;
     align-items: center;
-    display: inline;
     div{
         margin: 15px;
         background-color: $cards-color;
