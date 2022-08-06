@@ -52,21 +52,26 @@ p {
     .conoce .grillaGeneral .horarios h3 {
       padding: 10px; }
 
-.novedades {
-  padding-bottom: 80px;
+  .novedades div{
+  background-color: #dcdcdc;
+  padding: 15px;
+  border-radius: 3%;
+  width: 350px;
+  margin: 15px auto;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: auto;
+  justify-content: center;
   align-items: center;
-  display: inline; }
-  .novedades div {
-    margin: 15px;
-    background-color: #dcdcdc;
-    padding: 35px;
-    border-radius: 3%;
-    width: 75%; }
+  flex-direction: column;
+}
+.novedades div h3{
+  width: 290px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.novedades div p{
+  width: 290px;
+}
 
 @media screen and (min-width: 768px) {
   .bienvenida {
