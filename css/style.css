@@ -47,13 +47,63 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .conoce h2, .conoce .grillaGeneral h2, .conoce .grillaGeneral .horarios h2 {
+    color: #c44536;
+    font-weight: bolder;
+    padding-bottom: 10px; }
   .conoce .grillaGeneral, .conoce .grillaGeneral .horarios .grillaGeneral, .conoce .grillaGeneral .horarios {
     width: 400px; }
     .conoce .grillaGeneral .horarios h3 {
       padding: 10px; }
 
+.novedades, .novedades div, .novedades div h3, .novedades div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10%; }
+  .novedades h2, .novedades div h3 h2, .novedades div p h2 {
+    color: #c44536; }
+  .novedades div, .novedades div h3 div, .novedades div p div {
+    background-color: #dcdcdc;
+    color: black;
+    border-radius: 3%;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    box-shadow: 5px 5px 5px #bebbbb; }
+    .novedades div h3 {
+      width: 245px;
+      padding-top: 10px; }
+    .novedades div p {
+      width: 245px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center; }
+
+.newsletter {
+  background-color: #fcca46; }
+  .newsletter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px; }
+    .newsletter div h3 {
+      font-size: 35px; }
+    .newsletter div p {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center; }
+
 footer {
-  background-color: #c44536; }
+  background-color: #c44536;
+  padding: 15px 5px 10px 5px;
+  font-size: 0.8rem;
+  color: white; }
+  footer h3 {
+    font-size: 1rem; }
 
 @media screen and (min-width: 768px) {
   .bienvenida {

@@ -32,6 +32,11 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    h2{
+        color: $h2-color;
+        font-weight: bolder;
+        padding-bottom: 10px;
+    }
     .grillaGeneral{
         @extend .conoce;
         width: 400px;
@@ -39,19 +44,58 @@ p{
             @extend .grillaGeneral;
             h3{
                 padding: 10px;
-
             }
         }
         }
     }
 .novedades{
-    background-color: #dcdcdc;
-    padding: 15px;
-    border-radius: 3%;
-    width: 75%;
-    margin: 15px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10%;
+    h2{
+        color: $h2-color;
+    }
+    div{
+        @extend .novedades;
+        background-color: #dcdcdc;
+        color: $font-color;
+        border-radius: 3%;
+        width: 300px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+        box-shadow: 5px 5px 5px rgb(190, 187, 187);
+        h3{
+            @extend .novedades;
+            width: 245px;
+            padding-top: 10px;
+        }
+        p{
+            @extend .novedades;
+            width: 245px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.newsletter{
+    background-color: $background-newsletter;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        h3{
+            font-size: 35px;
+        }
+        p{
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+    }
 }
