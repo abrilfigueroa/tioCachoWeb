@@ -35,11 +35,11 @@ p {
   flex-wrap: wrap;
   justify-content: flex-start; }
   .bienvenida h1 {
-    font-size: 55px;
+    font-size: 45px;
     color: black;
     font-weight: bolder; }
   .bienvenida p {
-    font-size: 20px;
+    font-size: 15px;
     color: black; }
 
 .conoce, .conoce .grillaGeneral, .conoce .grillaGeneral .horarios {
@@ -52,26 +52,8 @@ p {
     .conoce .grillaGeneral .horarios h3 {
       padding: 10px; }
 
-  .novedades div{
-  background-color: #dcdcdc;
-  padding: 15px;
-  border-radius: 3%;
-  width: 350px;
-  margin: 15px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.novedades div h3{
-  width: 290px;
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
-}
-.novedades div p{
-  width: 290px;
-}
+footer {
+  background-color: #c44536; }
 
 @media screen and (min-width: 768px) {
   .bienvenida {
