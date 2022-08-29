@@ -146,18 +146,19 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    width: 100%;
     ul{
-        width: 1200px;
-        padding-bottom: 2.5%;
+        padding: 0%;
         li{
             list-style: none;
             text-decoration: none;
             display: inline;
+            text-align: center;
             :hover{
                 transform: scale(1.2);
             }
             a{
-                padding: 1.5%;
                 text-decoration: none;
             }
         }

@@ -143,18 +143,19 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center;
+  width: 100%; }
   .contactate ul {
-    width: 1200px;
-    padding-bottom: 2.5%; }
+    padding: 0%; }
     .contactate ul li {
       list-style: none;
       text-decoration: none;
-      display: inline; }
+      display: inline;
+      text-align: center; }
       .contactate ul li :hover {
         transform: scale(1.2); }
       .contactate ul li a {
-        padding: 1.5%;
         text-decoration: none; }
 
 .productos {
