@@ -1,12 +1,62 @@
-@media screen and (min-width:768px){
-    .bienvenida{
-        background-image: url(../img/background768.png);
-        height: 533px;
+@media screen and (min-width:820px){
+    .productos{
+        article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            div{
+                padding: 2.5;
+                margin: 1.5%;
+            }
+        }
+        h2{
+            text-align: center;
+        }
     }
 }
 @media screen and (min-width:1024px){
-    .bienvenida{
-        background-image: url(../img/background1024.png);
-        height: 431px;
+    .novedades{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        div{
+            height: 600px;
+            width: 350px;
+        }
     }
+    .nos{
+        display: grid;
+        grid-template-columns: 1fr 1 fr 1fr;
+        grid-template-areas: "img txt txt";
+        .imgInicios{
+            grid-area: img;
+            padding-left: 4%;
+            padding-bottom: 10%;
+        }
+        .txtInicios{
+            grid-area: txt;
+            padding-left: 10%;
+            text-align: left;
+        }
+    }
+    .pedidos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "form pency";
+        .form{
+            grid-area: form;
+            margin-left: 15%;
+        }
+        .pency{
+            grid-area: pency;
+        }
+    }
+}
+.contacte{
+    form{
+        width: 1000px;
+}
 }

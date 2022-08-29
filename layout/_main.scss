@@ -1,65 +1,70 @@
 h1{
     font-size: $font-h1;
+    text-align: center;
+    padding: 2.5%;
 }
 h2{
     font-size: $font-h2;
+    color: $h2-color;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 1.3rem;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 p{
     font-size: $font-p;
+    text-align: center;
 }
-.bienvenida{
-    background-image: url(../img/background576.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    padding: 80px;
+.grillaGral{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "banner carrusel carrusel";
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    h1{
-        font-size: 45px;
-        color: black;
-        font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    .banner{
+        grid-area: banner;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7ecde;
+        padding-bottom: 1.5%;
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+        width: 1900px;
+        height: 250px;
+        h1{
+            font-size: 2rem;
+            padding-bottom: 0%;
+        }
+        p{
+            text-align: center;
+            font-size: 1.2rem;
+        }
     }
-    p{
-        font-size: 15px;
-        color: black;
+    .carrusel{
+        grid-area: carrusel;
     }
 }
-.conoce{
-    padding: 25px 15px 25px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2{
-        color: $h2-color;
-        font-weight: bolder;
-        padding-bottom: 10px;
-    }
-    .grillaGeneral{
-        @extend .conoce;
-        width: 400px;
-        .horarios{
-            @extend .grillaGeneral;
-            h3{
-                padding: 10px;
-            }
-        }
-        }
-    }
+.novedad{
+    padding-top: 55px;
+}
 .novedades{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 10%;
-    h2{
-        color: $h2-color;
-    }
     div{
         @extend .novedades;
-        background-color: #dcdcdc;
+        background-color: #eceaea;
         color: $font-color;
         border-radius: 3%;
         width: 300px;
@@ -67,17 +72,15 @@ p{
         margin-bottom: 15px;
         padding-top: 15px;
         box-shadow: 5px 5px 5px rgb(190, 187, 187);
+        text-align: center;
         h3{
-            @extend .novedades;
+            padding-top: 15px;
+            text-align: center;
             width: 245px;
-            padding-top: 10px;
         }
         p{
-            @extend .novedades;
-            width: 245px;
+            @extend h3;
             font-size: 1.2rem;
-            display: flex;
-            align-items: center;
         }
     }
 }
@@ -85,6 +88,7 @@ p{
     background-color: $background-newsletter;
     div{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -95,7 +99,101 @@ p{
         p{
             font-size: 1.2rem;
             display: flex;
-            align-items: center;
+            text-align: center;
         }
+    }
+}
+.nos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    p{
+        padding: 5%;
+        font-size: 1.1rem;
+    }
+    img{
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+.contacto, .pedidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 7%;
+    form{
+        padding-bottom: 10%;
+        background-color: #f7ecde;
+        border-radius: 2.5%;
+        label{
+            padding: 2%;
+        }
+    }
+}
+.pedidos{
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 5%;
+    }
+}
+.contactate{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    ul{
+        width: 1200px;
+        padding-bottom: 2.5%;
+        li{
+            list-style: none;
+            text-decoration: none;
+            display: inline;
+            :hover{
+                transform: scale(1.2);
+            }
+            a{
+                padding: 1.5%;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    article{
+        div{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 300px;
+            background-color: #fce4a1;
+            text-align: center;
+            padding-top: 3.5%;
+            padding-bottom: 3.5%;
+            border-radius: 2.5%;
+            margin: 7%;
+            h3{
+                padding-top: 7%;
+            }
+            img{
+                border-radius: 2.5%;
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        padding-top: 5.5%;
     }
 }

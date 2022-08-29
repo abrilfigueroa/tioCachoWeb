@@ -2,8 +2,35 @@ footer{
     background-color: $color-footer;
     padding: 15px 5px 10px 5px;
     font-size: 0.8rem;
-    color: white;
-    h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    ul{
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #666666;
+            }
+        }
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+        :hover{
+            transform: scale(1.2);
+        }
+    }
+    .datos{
+        text-align: center;
         font-size: 1rem;
+        color: #c44536;
+    }
+    p{
+        text-align: center;
+        color: #8c8c8c;
+        padding-top: 20px;
     }
 }

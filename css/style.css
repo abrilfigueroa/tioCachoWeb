@@ -1,116 +1,265 @@
 header {
-  background-color: #c44536;
+  background-color: #CDB699;
   position: sticky;
   top: 0%; }
-  header nav {
-    cursor: pointer; }
-    header nav ul {
-      padding: 5%;
-      font-weight: bolder;
-      color: #fcca46; }
-      header nav ul li {
-        padding-left: 10px; }
-        header nav ul li a {
-          font-size: 1.8rem; }
-          header nav ul li a:hover {
-            color: #ffffff; }
+  header nav ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    color: #fcca46; }
+    header nav ul li {
+      padding-left: 10px; }
+      header nav ul li a {
+        font-size: 1.8rem; }
+        header nav ul li a a:hover {
+          color: #c44536; }
 
 h1 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2.5%; }
 
 h2 {
-  font-size: 2.1rem; }
+  font-size: 2.1rem;
+  color: #c44536;
+  text-align: center; }
+
+h3, .novedades div p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-right: 2%;
+  padding-left: 2%; }
 
 p {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  text-align: center; }
 
-.bienvenida {
-  background-image: url(../img/background576.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  padding: 80px;
+.grillaGral {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "banner carrusel carrusel";
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; }
-  .bienvenida h1 {
-    font-size: 45px;
-    color: black;
-    font-weight: bolder; }
-  .bienvenida p {
-    font-size: 15px;
-    color: black; }
-
-.conoce, .conoce .grillaGeneral, .conoce .grillaGeneral .horarios {
-  padding: 25px 15px 25px 15px;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center; }
-  .conoce h2, .conoce .grillaGeneral h2, .conoce .grillaGeneral .horarios h2 {
-    color: #c44536;
-    font-weight: bolder;
-    padding-bottom: 10px; }
-  .conoce .grillaGeneral, .conoce .grillaGeneral .horarios .grillaGeneral, .conoce .grillaGeneral .horarios {
-    width: 400px; }
-    .conoce .grillaGeneral .horarios h3 {
-      padding: 10px; }
+  .grillaGral .banner {
+    grid-area: banner;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7ecde;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    width: 1900px;
+    height: 250px; }
+    .grillaGral .banner h1 {
+      font-size: 2rem;
+      padding-bottom: 0%; }
+    .grillaGral .banner p {
+      text-align: center;
+      font-size: 1.2rem; }
+  .grillaGral .carrusel {
+    grid-area: carrusel; }
 
-.novedades, .novedades div, .novedades div h3, .novedades div p {
+.novedad {
+  padding-top: 55px; }
+
+.novedades, .novedades div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 10%; }
-  .novedades h2, .novedades div h3 h2, .novedades div p h2 {
-    color: #c44536; }
-  .novedades div, .novedades div h3 div, .novedades div p div {
-    background-color: #dcdcdc;
+  .novedades div, .novedades div div {
+    background-color: #eceaea;
     color: black;
     border-radius: 3%;
     width: 300px;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 15px;
-    box-shadow: 5px 5px 5px #bebbbb; }
-    .novedades div h3 {
-      width: 245px;
-      padding-top: 10px; }
+    box-shadow: 5px 5px 5px #bebbbb;
+    text-align: center; }
+    .novedades div h3, .novedades div p {
+      padding-top: 15px;
+      text-align: center;
+      width: 245px; }
     .novedades div p {
-      width: 245px;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center; }
+      font-size: 1.2rem; }
 
 .newsletter {
   background-color: #fcca46; }
   .newsletter div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 15px; }
-    .newsletter div h3 {
+    .newsletter div h3, .newsletter .novedades div p, .novedades .newsletter div p {
       font-size: 35px; }
     .newsletter div p {
       font-size: 1.2rem;
       display: flex;
-      align-items: center; }
+      text-align: center; }
+
+.nos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .nos p {
+    padding: 5%;
+    font-size: 1.1rem; }
+  .nos img {
+    padding-top: 20px;
+    text-align: center; }
+
+.contacto, .pedidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 7%; }
+  .contacto form, .pedidos form {
+    padding-bottom: 10%;
+    background-color: #f7ecde;
+    border-radius: 2.5%; }
+    .contacto form label, .pedidos form label {
+      padding: 2%; }
+
+.pedidos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%; }
+
+.contactate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .contactate ul {
+    width: 1200px;
+    padding-bottom: 2.5%; }
+    .contactate ul li {
+      list-style: none;
+      text-decoration: none;
+      display: inline; }
+      .contactate ul li :hover {
+        transform: scale(1.2); }
+      .contactate ul li a {
+        padding: 1.5%;
+        text-decoration: none; }
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .productos h1 {
+    padding-top: 5%;
+    padding-bottom: 0%; }
+  .productos article div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+    background-color: #fce4a1;
+    text-align: center;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    border-radius: 2.5%;
+    margin: 7%; }
+    .productos article div h3, .productos article .novedades div p, .novedades .productos article div p {
+      padding-top: 7%; }
+    .productos article div img {
+      border-radius: 2.5%; }
+  .productos h2 {
+    text-align: center;
+    padding-top: 5.5%; }
 
 footer {
-  background-color: #c44536;
+  background-color: #F7ECDE;
   padding: 15px 5px 10px 5px;
   font-size: 0.8rem;
-  color: white; }
-  footer h3 {
-    font-size: 1rem; }
+  padding-top: 20px;
+  padding-bottom: 10px; }
+  footer ul li {
+    list-style: none; }
+    footer ul li a {
+      text-decoration: none;
+      color: #666666; }
+  footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px; }
+    footer .redes :hover {
+      transform: scale(1.2); }
+  footer .datos {
+    text-align: center;
+    font-size: 1rem;
+    color: #c44536; }
+  footer p {
+    text-align: center;
+    color: #8c8c8c;
+    padding-top: 20px; }
 
-@media screen and (min-width: 768px) {
-  .bienvenida {
-    background-image: url(../img/background768.png);
-    height: 533px; } }
+@media screen and (min-width: 820px) {
+  .productos article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; }
+    .productos article div {
+      padding: 2.5;
+      margin: 1.5%; }
+  .productos h2 {
+    text-align: center; } }
 
 @media screen and (min-width: 1024px) {
-  .bienvenida {
-    background-image: url(../img/background1024.png);
-    height: 431px; } }
+  .novedades, .novedades div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .novedades div, .novedades div div {
+      height: 600px;
+      width: 350px; }
+  .nos {
+    display: grid;
+    grid-template-columns: 1fr 1 fr 1fr;
+    grid-template-areas: "img txt txt"; }
+    .nos .imgInicios {
+      grid-area: img;
+      padding-left: 4%;
+      padding-bottom: 10%; }
+    .nos .txtInicios {
+      grid-area: txt;
+      padding-left: 10%;
+      text-align: left; }
+  .pedidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "form pency"; }
+    .pedidos .form {
+      grid-area: form;
+      margin-left: 15%; }
+    .pedidos .pency {
+      grid-area: pency; } }
+
+.contacte form {
+  width: 1000px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
