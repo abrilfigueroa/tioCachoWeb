@@ -117,7 +117,8 @@ p {
     font-size: 1.1rem; }
   .nos img {
     padding-top: 20px;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
 .contacto, .pedidos {
   display: flex;
@@ -210,6 +211,8 @@ footer {
     text-align: center;
     font-size: 1rem;
     color: #c44536; }
+    footer .datos ul {
+      padding-left: 0%; }
   footer p {
     text-align: center;
     color: #8c8c8c;
